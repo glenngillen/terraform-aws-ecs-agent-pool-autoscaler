@@ -34,6 +34,7 @@ module "agent-scaler" {
   name              = local.agents_name
   workspace_name    = "my-terraform-cloud-workspace-here"
 
-  
+  cluster_name      = module.agents.cluster_name
+  service_name      = module.agents.service_name
 }
 ```
